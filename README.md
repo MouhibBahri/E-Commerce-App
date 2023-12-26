@@ -1,13 +1,16 @@
 # E-Commerce-App
+### Welcome to Hike Haven, an eCommerce platform developed for academic purposes using Java. This README provides essential information for users and developer
+### . Software Name: Hike Haven
+### . Version: 1.00
+### . Date: December 2023
 
 ## Class Diagram Overview
-![image](https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/3aa35e45-b67a-477c-82ed-848bf4555080)
+#### The class diagram offers a high-level view of the Hike Haven application, illustrating key classes and interfaces. Dive into each feature for an in-depth understanding.
+![1](https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/6099ce0b-5009-4de7-92a5-ae27a0376e07)
 
-## ISharedFunctions Interface
-##### This interface provides methods for consistent user interaction and output formatting:
-##### - getIntInput(String, int, int): Retrieves user input within a range.            
-##### - printMenu(String): Displays a formatted menu.                                   
-##### - roundPrice(double): Rounds a price to two decimal places. 
+### **Note:** The `ISharedFunctions` interface is crucial for consistent interaction and output formatting. such us `getIntInput`, `printMenu`, and `roundPrice`.
+
+## Key Features
 
 ## Data Storage 
 ##### Text files are used for persistence:
