@@ -89,7 +89,40 @@
 ![10 (1)](https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/49a6a50c-9cd6-4d8d-9228-ba7d1d76f0cc)
 
 ### Inventory Management
-##### The Inventory Management feature in the Hike Haven application ensures automated tracking and updates of the product inventory post-purchase
+##### The Inventory Management feature in the Hike Haven application ensures automated tracking and updates of the product inventory post-purchase.
+
+#### OrderModel Class:
+##### The OrderModel class ensurs inventory management during order completion. The completeOrder method within this class is executed only after verifying that each product in the order is available in stock.
+
+#### ShoppingCart Class:
+##### The ShoppingCart class ensures that products added to the cart have quantities available in stock. This preventive measure guarantees that users can only add products that are currently in stock, reducing the likelihood of issues during the order completion process.
+
+#### ProductsList Class:
+##### The updateInventory method within the OrderModel class interacts with the ProductsList class, ensuring that product quantities are appropriately updated after an order is completed. This dynamic relationship guarantees accurate and up-to-date inventory tracking.
+
+### Key Functions:
+#### 1. **Automated Tracking**: Inventory is automatically updated after each purchase, ensuring real-time accuracy in product quantities.
+
+#### 2. **Preventive Measures**: The ShoppingCart class enforces restrictions on adding products to the cart, ensuring that only products with available quantities can be selected.
+
+#### 3. **Low Stock Handling**: The system is designed to address scenarios of low or out-of-stock items, enabling measures like updating product availability and providing administrators with insights on products running low within the reports.
+
+### Dynamic Product Search and Filtering:
+#### Search Functionality:
+##### * Users can conduct efficient searches by entering case-insensitive keywords related to product names.
+#### Filtering Options:
+##### * The ProductsList class features a comprehensive method for filtering products based on multiple criteria, including price range, category, and availability.
+##### Filtering is entirely optional, allowing users the flexibility to choose specific criteria for refining search results.
+
+###### Public static ArrayList<ProductModel> filterProducts(double maxPrice,double minPrice, String category, String productName,boolean inStock)
+
+### Payment Processing:
+##### . The Payment Processing feature is seamlessly integrated into the OrderModel class.
+##### . Upon completing an order, users are prompted for basic credit card information.
+
+
+
+
 
 
 
