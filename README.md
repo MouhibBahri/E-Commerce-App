@@ -13,15 +13,20 @@
 ## Key Features
 
 ## Data Storage 
-##### Text files are used for persistence:
+### For this project, the chosen method for data storage revolves around the utilization of text files. We have adopted text files to store crucial information such as accounts, products, orders, and shopping carts. This decision was made for its simplicity, ease of implementation, and human-readable nature.
 
-#### -accounts.txt: Stores user credentials and types.
+#### Organizing Data in Text Files
+##### - **Users Accounts:** Captures username, password, and user type ( customer / admin ).
+![image](https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/85c2633e-b0db-4087-aa2a-54b3b0fa06cc)
 
-#### -products.txt: Contains product details like ID, name, description, category, price, and stock.
+##### - **Products:** Includes essential attributes like product ID, name, description, category, price, and quantity in stock and other specific attributes relevant to each category.
+![image](https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/5d1de79b-e1ee-4075-b77a-00326db7e5ca)
 
-#### -orders.txt: Lists orders with client information and product details.
+##### - **Orders:** Details client information and purchased products.
+![image](https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/259fb65c-d307-42a4-a2e7-954b240877ca)
 
-#### -shopping_carts.txt: Tracks customer carts with product IDs and quantities.
+##### - **Shopping Carts:** Manages customer carts, including product IDs and quantities.
+![image](https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/ab25e1e7-d69d-4c43-8781-da7ab74d0796)
 
 ## User Authentication
 
