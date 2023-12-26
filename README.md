@@ -17,7 +17,7 @@
 
 #### Organizing Data in Text Files
 ##### - **Users Accounts:** Captures username, password, and user type ( customer / admin ).
-![image](https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/85c2633e-b0db-4087-aa2a-54b3b0fa06cc)
+<img src="[https://example.com/your-image.jpg](https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/85c2633e-b0db-4087-aa2a-54b3b0fa06cc)" width="400">
 
 ##### - **Products:** Includes essential attributes like product ID, name, description, category, price, and quantity in stock and other specific attributes relevant to each category.
 ![image](https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/5d1de79b-e1ee-4075-b77a-00326db7e5ca)
