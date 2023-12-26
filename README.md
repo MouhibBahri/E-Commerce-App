@@ -8,5 +8,5 @@
 #### This interface provides methods for consistent user interaction and output formatting:
 #### - getIntInput(String, int, int): Retrieves user input within a range.            
 #### - printMenu(String): Displays a formatted menu.                                   
-#### - roundPrice(double): Rounds a price to two decimal places.
+#### - roundPrice(double): Rounds a price to two decimal places. 
 
