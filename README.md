@@ -8,7 +8,7 @@
 #### The class diagram offers a high-level view of the Hike Haven application, illustrating key classes and interfaces. Dive into each feature for an in-depth understanding.
 ![1](https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/6099ce0b-5009-4de7-92a5-ae27a0376e07)
 
-### **Note:** The `ISharedFunctions` interface is crucial for consistent interaction and output formatting. such us `getIntInput`, `printMenu`, and `roundPrice`.
+### *Note:* The ISharedFunctions interface is crucial for consistent interaction and output formatting. such us getIntInput, printMenu, and roundPrice.
 
 ## Key Features
 
@@ -16,21 +16,21 @@
 ### For this project, the chosen method for data storage revolves around the utilization of text files. We have adopted text files to store crucial information such as accounts, products, orders, and shopping carts. This decision was made for its simplicity, ease of implementation, and human-readable nature.
 
 #### Organizing Data in Text Files
-##### - **Users Accounts:** Captures username, password, and user type ( customer / admin ).
-<img src="[https://example.com/your-image.jpg](https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/85c2633e-b0db-4087-aa2a-54b3b0fa06cc)" width="400">
+##### - *Users Accounts:* Captures username, password, and user type ( customer / admin ).
+![image](https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/85c2633e-b0db-4087-aa2a-54b3b0fa06cc)
 
-##### - **Products:** Includes essential attributes like product ID, name, description, category, price, and quantity in stock and other specific attributes relevant to each category.
+##### - *Products:* Includes essential attributes like product ID, name, description, category, price, and quantity in stock and other specific attributes relevant to each category.
 ![image](https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/5d1de79b-e1ee-4075-b77a-00326db7e5ca)
 
-##### - **Orders:** Details about client information and purchased products.
+##### - *Orders:* Details about client information and purchased products.
 ![image](https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/259fb65c-d307-42a4-a2e7-954b240877ca)
 
-##### - **Shopping Carts:** Manages customer carts, including product IDs and quantities.
+##### - *Shopping Carts:* Manages customer carts, including product IDs and quantities.
 ![image](https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/ab25e1e7-d69d-4c43-8781-da7ab74d0796)
 
 ### User Authentication
 
-##### The robust user authentication system involves the `UserModel` class, `UsersList` class, and `WelcomeScreen` class.
+##### The robust user authentication system involves the UserModel class, UsersList class, and WelcomeScreen class.
 
 #### UserModel Class
 
@@ -78,7 +78,7 @@
 ![8](https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/6c065f47-48e2-48b2-907a-1dcdcf180fcd)
 
 ### Order Processing
-##### Facilitates the transition from cart to order completion using the `OrderModel` and `OrdersList` classes within UsersData package.
+##### Facilitates the transition from cart to order completion using the OrderModel and OrdersList classes within UsersData package.
 
 #### OrderModel Class
 ###### The OrderModel class encapsulates the details of an order, including the customer, items selected for purchase, a unique order ID (automatically incremented), and the total price of the order.
@@ -101,11 +101,11 @@
 ##### The updateInventory method within the OrderModel class interacts with the ProductsList class, ensuring that product quantities are appropriately updated after an order is completed. This dynamic relationship guarantees accurate and up-to-date inventory tracking.
 
 ### Key Functions:
-#### 1. **Automated Tracking**: Inventory is automatically updated after each purchase, ensuring real-time accuracy in product quantities.
+#### 1. *Automated Tracking*: Inventory is automatically updated after each purchase, ensuring real-time accuracy in product quantities.
 
-#### 2. **Preventive Measures**: The ShoppingCart class enforces restrictions on adding products to the cart, ensuring that only products with available quantities can be selected.
+#### 2. *Preventive Measures*: The ShoppingCart class enforces restrictions on adding products to the cart, ensuring that only products with available quantities can be selected.
 
-#### 3. **Low Stock Handling**: The system is designed to address scenarios of low or out-of-stock items, enabling measures like updating product availability and providing administrators with insights on products running low within the reports.
+#### 3. *Low Stock Handling*: The system is designed to address scenarios of low or out-of-stock items, enabling measures like updating product availability and providing administrators with insights on products running low within the reports.
 
 ### Dynamic Product Search and Filtering:
 #### Search Functionality:
@@ -120,9 +120,42 @@
 ##### . The Payment Processing feature is seamlessly integrated into the OrderModel class.
 ##### . Upon completing an order, users are prompted for basic credit card information.
 
+## Optional Yet Crucial Features
+
+### Product Recommendations 
+
+#### Functionality Overview:
+##### Hike Haven's Product Recommendation system, powered by the RecommendationSystem class, enhances the user experience by providing personalized suggestions.
+##### Recommendations are tailored to each user's preferences, leveraging their purchase history and patterns.
+#### Scoring Algorithm:
+##### The system employs a sophisticated scoring algorithm:
+##### A score of 0.02 times the quantity bought is added for each product in the same category as the user's past purchases; which means when a user buys from a certain category, all other products from that category should be more likely to be featured.
+##### An additional score of 0.01 times the quantity sold contributes to the overall product score; which means top-selling products should be more likely to be featured.
+#### User-Centric Approach:
+##### This feature creates a dynamic and engaging shopping environment, presenting users with products aligned with their interests and buying patterns.
+#### Implementation Details:
+##### The RecommendationSystem class, located in the productsData package, dynamically calculates scores for all products upon user authentication. This approach ensures a personalized and context-aware recommendation system, enhancing the overall user experience.
+##### It uses a combination of purchase history and global popularity to deliver relevant and enticing suggestions.
+![image](https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/151a2b58-e076-4c1e-b3cc-9ee1c2c0b9ff)
 
 
-
-
-
-
+### Generating Reports
+#### Functionality Overview:
+##### The ManageReports class, part of the services package, automates the generation of comprehensive reports, providing valuable insights for administrators.
+##### Reports cover diverse aspects, including financial metrics, order analytics, and product availability.
+#### Key Reports:
+##### Average Order Value:
+###### Calculates the average value of orders, offering an overview of customer spending patterns.
+##### Lowest and Highest Order:
+###### Identifies extreme values in the order history, aiding in understanding outliers.
+##### Best-Selling Products:
+###### Ranks products based on the quantity sold, helping administrators identify popular items.
+#### Low Stock Products:
+###### Flags products with stock quantities below a predefined threshold, prompting timely restocking decisions.
+#### User-Friendly Presentation:
+##### The show method in ManageReports ensures reports are presented in a clear and organized manner, facilitating quick comprehension.
+#### Automation for Efficiency:
+##### Reports are automatically generated at the administrator's request, saving time and ensuring up-to-date insights into the platform's performance.
+#### Future Enhancements:
+##### The system is designed with extensibility in mind, allowing for the addition of more reporting functionalities in future updates.
+![13 (2)](https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/15c10191-53e9-4afe-8b03-b430f9041690)
