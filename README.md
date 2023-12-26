@@ -10,6 +10,8 @@
 
 ### *Note:* The ISharedFunctions interface is crucial for consistent interaction and output formatting. such us getIntInput, printMenu, and roundPrice.
 
+### *Note:* 
+
 ## Key Features
 
 ## Data Storage 
@@ -159,3 +161,6 @@
 #### Future Enhancements:
 ##### The system is designed with extensibility in mind, allowing for the addition of more reporting functionalities in future updates.
 ![13 (2)](https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/15c10191-53e9-4afe-8b03-b430f9041690)
+
+### Wrap-Up
+#### As we wrap up this journey through the developer documentation, we extend our sincere gratitude for your interest in the Hike Haven Console Application. We trust you found value in this README, and we appreciate your time and attention.
