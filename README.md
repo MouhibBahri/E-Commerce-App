@@ -100,9 +100,9 @@
 ###### ProductsList Class:                                                              ####### The updateInventory method within the OrderModel class interacts with the ProductsList class, ensuring that product quantities are appropriately updated after an order is completed. This dynamic relationship guarantees accurate and up-to-date inventory tracking.
 
 ### Key Functions:
-#### 1. *Automated Tracking*: Inventory is automatically updated after each purchase, ensuring real-time accuracy in product quantities.
-#### 2. *Preventive Measures*: The ShoppingCart class enforces restrictions on adding products to the cart, ensuring that only products with available quantities can be selected.
-#### 3. *Low Stock Handling*: The system is designed to address scenarios of low or out-of-stock items, enabling measures like updating product availability and providing administrators with insights on products running low within the reports.
+#### 1. Automated Tracking: Inventory is automatically updated after each purchase, ensuring real-time accuracy in product quantities.
+#### 2. Preventive Measures: The ShoppingCart class enforces restrictions on adding products to the cart, ensuring that only products with available quantities can be selected.
+#### 3. Low Stock Handling: The system is designed to address scenarios of low or out-of-stock items, enabling measures like updating product availability and providing administrators with insights on products running low within the reports.
 
 ### Dynamic Product Search and Filtering:
 #### Search Functionality:
