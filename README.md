@@ -4,13 +4,17 @@
 ### . Version: 1.00
 ### . Date: December 2023
 
+### *Note 1:* For administrative purposes, the software includes a default admin account. This account is intended for initial setup and should be promptly updated with custom credentials to enhance security.
+### Username: admin
+### Password: admin
+
+### *Note 2:* A detailed documentation can be found here: https://mouhibbahri.slite.page/p/Msgev4wVeab6GJ/Hike-Haven-Documentation
+
 ## Class Diagram Overview
 #### The class diagram offers a high-level view of the Hike Haven application, illustrating key classes and interfaces. Dive into each feature for an in-depth understanding.
 ![1](https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/6099ce0b-5009-4de7-92a5-ae27a0376e07)
 
 ### *Note:* The ISharedFunctions interface is crucial for consistent interaction and output formatting. such us getIntInput, printMenu, and roundPrice.
-
-### *Note:* 
 
 ## Key Features
 
