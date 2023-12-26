@@ -64,4 +64,11 @@
 
 ##### several subclasses extend from ProductModel Class: each catering to a specific product category: AdventureGear, ExplorationTools, HealthAndFitness, TravelEssentials, Others.
 
+##### Each subclass adds its unique attributes and can override general methods, such as toString, to tailor the representation to the specific product category.
+![7](https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/65efeda3-f7d2-4278-9403-8d9fca06bdad)
+
+#### ProductsList Class
+###### Dynamic repository for storing and managing products in a text file, featuring CRUD operations and filtering based on a specific critera.
+
+
 
