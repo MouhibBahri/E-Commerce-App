@@ -72,8 +72,7 @@
 ###### Each subclass adds its unique attributes and can override general methods, such as toString, to tailor the representation to the specific product category.
 ![ProductModel Class Image](https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/65efeda3-f7d2-4278-9403-8d9fca06bdad)
 
-###### ProductsList Class
-####### Dynamic repository for storing and managing products in a text file, featuring CRUD operations and filtering based on a specific critera.
+###### ProductsList Class                                                               ####### Dynamic repository for storing and managing products in a text file, featuring CRUD operations and filtering based on a specific critera.
 
 ### Management of Shopping Cart:
 ##### The Shopping Cart functionality enables users to efficiently manage their selected products before finalizing a purchase.
@@ -85,25 +84,20 @@
 ### Order Processing
 ##### Facilitates the transition from cart to order completion using the OrderModel and OrdersList classes within UsersData package.
 
-###### OrderModel Class
-####### The OrderModel class encapsulates the details of an order, including the customer, items selected for purchase, a unique order ID (automatically incremented), and the total price of the order.
+###### OrderModel Class                                                                 ####### The OrderModel class encapsulates the details of an order, including the customer, items selected for purchase, a unique order ID (automatically incremented), and the total price of the order.
 ![OrderModel Class Image](https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/a990ef4b-bb3f-4e71-b06c-f1eb34a0fcc4)
 
-###### OrdersList Class:
-####### The OrdersList class serves as a centralized hub for order management, featuring a static TreeMap of orders. It facilitates CRUD operations on orders, as well as the ability to save orders to and retrieve orders from a file.
+###### OrdersList Class:                                                                ####### The OrdersList class serves as a centralized hub for order management, featuring a static TreeMap of orders. It facilitates CRUD operations on orders, as well as the ability to save orders to and retrieve orders from a file.
 ![OrdersList Class Image](https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/49a6a50c-9cd6-4d8d-9228-ba7d1d76f0cc)
 
 ### Inventory Management
 ##### The Inventory Management feature in the Hike Haven application ensures automated tracking and updates of the product inventory post-purchase.
 
-###### OrderModel Class:
-####### The OrderModel class ensures inventory management during order completion. The completeOrder method within this class is executed only after verifying that each product in the order is available in stock.
+###### OrderModel Class:                                                                ####### The OrderModel class ensures inventory management during order completion. The completeOrder method within this class is executed only after verifying that each product in the order is available in stock.
 
-###### ShoppingCart Class:
-####### The ShoppingCart class ensures that products added to the cart have quantities available in stock. This preventive measure guarantees that users can only add products that are currently in stock, reducing the likelihood of issues during the order completion process.
+###### ShoppingCart Class:                                                              ####### The ShoppingCart class ensures that products added to the cart have quantities available in stock. This preventive measure guarantees that users can only add products that are currently in stock, reducing the likelihood of issues during the order completion process.
 
-###### ProductsList Class:
-####### The updateInventory method within the OrderModel class interacts with the ProductsList class, ensuring that product quantities are appropriately updated after an order is completed. This dynamic relationship guarantees accurate and up-to-date inventory tracking.
+###### ProductsList Class:                                                              ####### The updateInventory method within the OrderModel class interacts with the ProductsList class, ensuring that product quantities are appropriately updated after an order is completed. This dynamic relationship guarantees accurate and up-to-date inventory tracking.
 
 ### Key Functions:
 #### 1. *Automated Tracking*: Inventory is automatically updated after each purchase, ensuring real-time accuracy in product quantities.
@@ -146,14 +140,10 @@
 ##### The ManageReports class, part of the services package, automates the generation of comprehensive reports, providing valuable insights for administrators.
 ##### Reports cover diverse aspects, including financial metrics, order analytics, and product availability.
 #### Key Reports:
-##### Average Order Value:
-####### Calculates the average value of orders, offering an overview of customer spending patterns.
-##### Lowest and Highest Order:
-####### Identifies extreme values in the order history, aiding in understanding outliers.
-##### Best-Selling Products:
-####### Ranks products based on the quantity sold, helping administrators identify popular items.
-#### Low Stock Products:
-####### Flags products with stock quantities below a predefined threshold, prompting timely restocking decisions.
+##### Average Order Value:                                                              ####### Calculates the average value of orders, offering an overview of customer spending patterns.
+##### Lowest and Highest Order:                                                         ####### Identifies extreme values in the order history, aiding in understanding outliers.
+##### Best-Selling Products:                                                            ####### Ranks products based on the quantity sold, helping administrators identify popular items.
+#### Low Stock Products:                                                                ####### Flags products with stock quantities below a predefined threshold, prompting timely restocking decisions.
 #### User-Friendly Presentation:
 ##### The show method in ManageReports ensures reports are presented in a clear and organized manner, facilitating quick comprehension.
 #### Automation for Efficiency:
