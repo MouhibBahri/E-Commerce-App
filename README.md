@@ -70,5 +70,26 @@
 #### ProductsList Class
 ###### Dynamic repository for storing and managing products in a text file, featuring CRUD operations and filtering based on a specific critera.
 
+### Management of Shopping Cart:
+##### The Shopping Cart functionality enables users to efficiently manage their selected products before finalizing a purchase.
+
+#### ShoppingCart Class
+##### Foundation for cart management, with methods for adding, updating, and removing items...
+![8](https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/6c065f47-48e2-48b2-907a-1dcdcf180fcd)
+
+### Order Processing
+##### Facilitates the transition from cart to order completion using the `OrderModel` and `OrdersList` classes within UsersData package.
+
+#### OrderModel Class
+###### The OrderModel class encapsulates the details of an order, including the customer, items selected for purchase, a unique order ID (automatically incremented), and the total price of the order.
+![9](https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/a990ef4b-bb3f-4e71-b06c-f1eb34a0fcc4)
+
+#### OrdersList Class:
+###### The OrdersList class serves as a centralized hub for order management, featuring a static TreeMap of orders. It facilitates CRUD operations on orders, as well as the ability to save orders to and retrieve orders from a file.
+![10 (1)](https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/49a6a50c-9cd6-4d8d-9228-ba7d1d76f0cc)
+
+### Inventory Management
+##### The Inventory Management feature in the Hike Haven application ensures automated tracking and updates of the product inventory post-purchase
+
 
 
