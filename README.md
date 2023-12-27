@@ -11,7 +11,8 @@
 ## Class Diagram Overview
 
 ##### The class diagram offers a high-level view of the Hike Haven application, illustrating key classes and interfaces. Dive into each feature for an in-depth understanding.
-<img src="https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/6099ce0b-5009-4de7-92a5-ae27a0376e07" height="650" alt="Class Diagram">
+<p align="center">
+  <img src="https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/6099ce0b-5009-4de7-92a5-ae27a0376e07" height="430" alt="Class Diagram">
 
 *Note:* The ISharedFunctions interface is crucial for consistent interaction and output formatting, such as getIntInput, printMenu, and roundPrice.
 
