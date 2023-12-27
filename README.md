@@ -98,7 +98,7 @@
 ##### OrderModel Class
 ###### The OrderModel class ensures inventory management during order completion. The completeOrder method within this class is executed only after verifying that each product in the order is available in stock.
 
-##### ShoppingCart Class
+##### ShoppingCart Class 
 ###### The ShoppingCart class ensures that products added to the cart have quantities available in stock. This preventive measure guarantees that users can only add products that are currently in stock, reducing the likelihood of issues during the order completion process.
 
 ##### ProductsList Class
