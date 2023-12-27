@@ -26,20 +26,20 @@ For this project, the chosen method for data storage revolves around the utiliza
 
 - *Users Accounts:* Captures username, password, and user type (customer/admin).
 
-  <img src="https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/85c2633e-b0db-4087-aa2a-54b3b0fa06cc" width="220" height="120">
+  <img src="https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/85c2633e-b0db-4087-aa2a-54b3b0fa06cc"  height="120">
  
 - *Products:* Includes essential attributes like product ID, name, description, category, price, quantity in stock, and other specific attributes relevant to each category.
 
-  <img src="https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/5d1de79b-e1ee-4075-b77a-00326db7e5ca" width="520" height="150">
+  <img src="https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/5d1de79b-e1ee-4075-b77a-00326db7e5ca"  height="150">
 
 
 - *Orders:* Details about client information and purchased products.
   
-  <img src="https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/259fb65c-d307-42a4-a2e7-954b240877ca" width="220" height="120">
+  <img src="https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/259fb65c-d307-42a4-a2e7-954b240877ca"  height="120">
 
 - *Shopping Carts:* Manages customer carts, including product IDs and quantities.
  
-  <img src="https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/ab25e1e7-d69d-4c43-8781-da7ab74d0796" width="220" height="70">
+  <img src="https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/ab25e1e7-d69d-4c43-8781-da7ab74d0796"  height="70">
 <br>
 
 ### User Authentication
@@ -59,7 +59,7 @@ For this project, the chosen method for data storage revolves around the utiliza
   
 Manages user accounts using a static map, performs CRUD operations, and enforces unique usernames.
 
-<img src="https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/637f32fb-1f95-4637-82c8-d5637ea95bb7" width="250" height="250">
+<img src="https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/637f32fb-1f95-4637-82c8-d5637ea95bb7"  height="250">
 <br>
 <br>
 
@@ -67,7 +67,7 @@ Manages user accounts using a static map, performs CRUD operations, and enforces
   
 Initial point of interaction for users, facilitating login, signup, and user type differentiation.
 
-<img src="https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/17f7edcc-aade-44c6-9be2-d7309dce6dd4" width="250" height="250">
+<img src="https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/17f7edcc-aade-44c6-9be2-d7309dce6dd4"  height="250">
 <br>
 <br>
 
@@ -75,7 +75,7 @@ Initial point of interaction for users, facilitating login, signup, and user typ
   
 After the Welcome Screen and user authentication, users are seamlessly directed to the Service Layer, where two distinct services cater to their specific needs: AdminService and CustomerService, both located in the services package.
 
-<img src="https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/97179f35-f922-41eb-bcbe-a9fb704aa35a" width="250" height="250">
+<img src="https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/97179f35-f922-41eb-bcbe-a9fb704aa35a" height="250">
 <br>
 <br>
 
@@ -89,7 +89,7 @@ Designed for administrators, offering account, product, order management, and re
   
 The AdminService utilizes the IEntityManager interface to standardize entity management operations. This interface performs CRUD operations and is implemented in the following classes: ManageAccounts, ManageOrders, and ManageProducts.
 
-<img src="https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/ce9f95ee-e339-4fd3-8869-fded8dd69e67" width="540" height="360">
+<img src="https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/ce9f95ee-e339-4fd3-8869-fded8dd69e67" height="360">
 <br>
 <br>
 
@@ -103,7 +103,7 @@ The AdminService utilizes the IEntityManager interface to standardize entity man
     <br>
     <br>
     
-    <img src="https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/65efeda3-f7d2-4278-9403-8d9fca06bdad" width="400" height="340">
+    <img src="https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/65efeda3-f7d2-4278-9403-8d9fca06bdad" height="340">
 <br>
 
 - **ProductsList Class**
@@ -118,7 +118,7 @@ The AdminService utilizes the IEntityManager interface to standardize entity man
 - **ShoppingCart Class**
   - Foundation for cart management, with methods for adding, updating, and removing items.
    
-    <img src="https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/6c065f47-48e2-48b2-907a-1dcdcf180fcd" width="300" height="80">
+    <img src="https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/6c065f47-48e2-48b2-907a-1dcdcf180fcd" height="80">
  
 ### Order Processing
 
@@ -127,12 +127,12 @@ The AdminService utilizes the IEntityManager interface to standardize entity man
 - **OrderModel Class**
   - The OrderModel class encapsulates the details of an order, including the customer, items selected for purchase, a unique order ID (automatically incremented), and the total price of the order.
  
-    <img src="https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/a990ef4b-bb3f-4e71-b06c-f1eb34a0fcc4" width="350" height="250">
+    <img src="https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/a990ef4b-bb3f-4e71-b06c-f1eb34a0fcc4" height="250">
  
 - **OrdersList Class**
   - The OrdersList class serves as a centralized hub for order management, featuring a static TreeMap of orders. It facilitates CRUD operations on orders, as well as the ability to save orders to and retrieve         orders from a file.
     
-    <img src="https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/49a6a50c-9cd6-4d8d-9228-ba7d1d76f0cc" width="250" height="150">
+    <img src="https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/49a6a50c-9cd6-4d8d-9228-ba7d1d76f0cc" height="150">
   
  <br>
  
@@ -205,7 +205,7 @@ The Payment Processing feature is seamlessly integrated into the OrderModel clas
 - The RecommendationSystem class, located in the productsData package, dynamically calculates scores for all products upon user authentication. This approach ensures a personalized and context-aware recommendation system, enhancing the overall user experience.
 - It uses a combination of purchase history and global popularity to deliver relevant and enticing suggestions.
 
-    <img src="https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/151a2b58-e076-4c1e-b3cc-9ee1c2c0b9ff" width="470" height="100">
+    <img src="https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/151a2b58-e076-4c1e-b3cc-9ee1c2c0b9ff"  height="100">
 
  <br>
  
@@ -234,7 +234,7 @@ The Payment Processing feature is seamlessly integrated into the OrderModel clas
 #### Future Enhancements
 - The system is designed with extensibility in mind, allowing for the addition of more reporting functionalities in future updates.
 
-  <img src="https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/15c10191-53e9-4afe-8b03-b430f9041690" width="330" height="180">
+  <img src="https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/15c10191-53e9-4afe-8b03-b430f9041690" height="180">
 
 <br>
 
