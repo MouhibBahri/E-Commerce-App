@@ -40,13 +40,11 @@ For this project, the chosen method for data storage revolves around the utiliza
 - *Shopping Carts:* Manages customer carts, including product IDs and quantities.
  
   <img src="https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/ab25e1e7-d69d-4c43-8781-da7ab74d0796" width="220" height="70">
-
 <br>
 
 ### User Authentication
 
 ##### The robust user authentication system involves the UserModel class, UsersList class, and WelcomeScreen class.
-<br>
 
 - **UserModel Class**
   
@@ -96,38 +94,48 @@ The AdminService utilizes the IEntityManager interface to standardize entity man
 <br>
 
 ### Product Management
-
 #### The Product Management feature encompasses two key classes within the productsData package.
 
 - **ProductModel Class**
   - The ProductModel class serves as the base entity for product representation. It encapsulates essential attributes common to all products (productId, productPrice, productDescription, productName, quantityInStock, score).
   - Several subclasses extend from ProductModel Class, each catering to a specific product category: AdventureGear, ExplorationTools, HealthAndFitness, TravelEssentials, Others.
   - Each subclass adds its unique attributes and can override general methods, such as toString, to tailor the representation to the specific product category.
-  ![ProductModel Class Image](https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/65efeda3-f7d2-4278-9403-8d9fca06bdad)
+    <br>
+    <br>
+    
+    <img src="https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/65efeda3-f7d2-4278-9403-8d9fca06bdad" width="400" height="340">
+<br>
 
 - **ProductsList Class**
   - Dynamic repository for storing and managing products in a text file, featuring CRUD operations and filtering based on specific criteria.
 
+ <br>
+ 
 ### Management of Shopping Cart
 
 #### The Shopping Cart functionality enables users to efficiently manage their selected products before finalizing a purchase.
 
 - **ShoppingCart Class**
   - Foundation for cart management, with methods for adding, updating, and removing items.
-  ![ShoppingCart Class Image](https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/6c065f47-48e2-48b2-907a-1dcdcf180fcd)
-
+   
+    <img src="https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/6c065f47-48e2-48b2-907a-1dcdcf180fcd" width="300" height="80">
+ 
 ### Order Processing
 
 #### Facilitates the transition from cart to order completion using the OrderModel and OrdersList classes within the UsersData package.
 
 - **OrderModel Class**
   - The OrderModel class encapsulates the details of an order, including the customer, items selected for purchase, a unique order ID (automatically incremented), and the total price of the order.
-  ![OrderModel Class Image](https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/a990ef4b-bb3f-4e71-b06c-f1eb34a0fcc4)
-
+ 
+    <img src="https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/a990ef4b-bb3f-4e71-b06c-f1eb34a0fcc4" width="350" height="250">
+ 
 - **OrdersList Class**
-  - The OrdersList class serves as a centralized hub for order management, featuring a static TreeMap of orders. It facilitates CRUD operations on orders, as well as the ability to save orders to and retrieve orders from a file.
-  ![OrdersList Class Image](https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/49a6a50c-9cd6-4d8d-9228-ba7d1d76f0cc)
-
+  - The OrdersList class serves as a centralized hub for order management, featuring a static TreeMap of orders. It facilitates CRUD operations on orders, as well as the ability to save orders to and retrieve         orders from a file.
+    
+    <img src="https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/49a6a50c-9cd6-4d8d-9228-ba7d1d76f0cc" width="250" height="150">
+  
+ <br>
+ 
 ### Inventory Management
 
 #### The Inventory Management feature in the Hike Haven application ensures automated tracking and updates of the product inventory post-purchase.
@@ -141,13 +149,18 @@ The AdminService utilizes the IEntityManager interface to standardize entity man
 - **ProductsList Class**
   - The updateInventory method within the OrderModel class interacts with the ProductsList class, ensuring that product quantities are appropriately updated after an order is completed. This dynamic relationship guarantees accurate and up-to-date inventory tracking.
 
+ <br>
+ 
 ### Key Functions
 
 1. *Automated Tracking*: Inventory is automatically updated after each purchase, ensuring real-time accuracy in product quantities.
+   
 2. *Preventive Measures*: The ShoppingCart class enforces restrictions on adding products to the cart, ensuring that only products with available quantities can be selected.
+   
 3. *Low Stock Handling*: The system is designed to address scenarios of low or out-of-stock items, enabling measures like updating product availability and providing administrators with insights on products running low within the reports.
 
-
+ <br>
+ 
 ### Dynamic Product Search and Filtering
 
 #### Search Functionality
@@ -163,12 +176,17 @@ public static ArrayList<ProductModel> filterProducts(double maxPrice, double min
 }
 ```
 
+ <br>
+ 
 ### Payment Processing
 
 The Payment Processing feature is seamlessly integrated into the OrderModel class. Upon completing an order, users are prompted for basic credit card information.
-
+ <br>
+<br>
+ 
 ## Optional Yet Crucial Features
-
+ <br>
+ 
 ### Product Recommendations
 
 #### Functionality Overview
@@ -186,8 +204,11 @@ The Payment Processing feature is seamlessly integrated into the OrderModel clas
 #### Implementation Details
 - The RecommendationSystem class, located in the productsData package, dynamically calculates scores for all products upon user authentication. This approach ensures a personalized and context-aware recommendation system, enhancing the overall user experience.
 - It uses a combination of purchase history and global popularity to deliver relevant and enticing suggestions.
-![Product Recommendations Image](https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/151a2b58-e076-4c1e-b3cc-9ee1c2c0b9ff)
 
+    <img src="https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/151a2b58-e076-4c1e-b3cc-9ee1c2c0b9ff" width="470" height="100">
+
+ <br>
+ 
 ### Generating Reports
 
 #### Functionality Overview
@@ -212,7 +233,9 @@ The Payment Processing feature is seamlessly integrated into the OrderModel clas
 
 #### Future Enhancements
 - The system is designed with extensibility in mind, allowing for the addition of more reporting functionalities in future updates.
-![Generating Reports Image](https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/15c10191-53e9-4afe-8b03-b430f9041690)
+
+  <img src="https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/15c10191-53e9-4afe-8b03-b430f9041690" width="330" height="180">
+
 
 ## Wrap-Up
 As we wrap up this journey through the developer documentation, we extend our sincere gratitude for your interest in the Hike Haven Console Application. We trust you found value in this README, and we appreciate your time and attention.
