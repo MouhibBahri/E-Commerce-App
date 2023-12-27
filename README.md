@@ -236,6 +236,7 @@ The Payment Processing feature is seamlessly integrated into the OrderModel clas
 
   <img src="https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/15c10191-53e9-4afe-8b03-b430f9041690" width="330" height="180">
 
+<br>
 
 ## Wrap-Up
 As we wrap up this journey through the developer documentation, we extend our sincere gratitude for your interest in the Hike Haven Console Application. We trust you found value in this README, and we appreciate your time and attention.
