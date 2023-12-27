@@ -25,43 +25,75 @@ For this project, the chosen method for data storage revolves around the utiliza
 #### Organizing Data in Text Files:
 
 - *Users Accounts:* Captures username, password, and user type (customer/admin).
-<img src="https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/85c2633e-b0db-4087-aa2a-54b3b0fa06cc" height="120" alt="Users Accounts">
 
+  <img src="https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/85c2633e-b0db-4087-aa2a-54b3b0fa06cc" width="220" height="120">
+ 
 - *Products:* Includes essential attributes like product ID, name, description, category, price, quantity in stock, and other specific attributes relevant to each category.
-![Products Image](https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/5d1de79b-e1ee-4075-b77a-00326db7e5ca)
+
+  <img src="https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/5d1de79b-e1ee-4075-b77a-00326db7e5ca" width="520" height="150">
+
 
 - *Orders:* Details about client information and purchased products.
-<img src="https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/259fb65c-d307-42a4-a2e7-954b240877ca" height="100" alt="Orders">
+  
+  <img src="https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/259fb65c-d307-42a4-a2e7-954b240877ca" width="220" height="120">
 
 - *Shopping Carts:* Manages customer carts, including product IDs and quantities.
-<img src="https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/ab25e1e7-d69d-4c43-8781-da7ab74d0796" height="100" alt="Shopping Carts">
+ 
+  <img src="https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/ab25e1e7-d69d-4c43-8781-da7ab74d0796" width="220" height="70">
+
+<br>
 
 ### User Authentication
 
-#### The robust user authentication system involves the UserModel class, UsersList class, and WelcomeScreen class.
+##### The robust user authentication system involves the UserModel class, UsersList class, and WelcomeScreen class.
+<br>
 
-#### UserModel Class
-##### Central entity encapsulating user-related information, with subclasses for Admin and Customer.
-<img src="https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/6ab90c82-8806-470f-9f38-2bd55e407324" height="600" alt="UserModel Class">
+- **UserModel Class**
+  
+ Central entity encapsulating user-related information, with subclasses for Admin and Customer.
 
-#### UsersList Class
-##### Manages user accounts using a static map, performs CRUD operations, and enforces unique usernames.
-<img src="https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/637f32fb-1f95-4637-82c8-d5637ea95bb7" height="300" alt="UsersList Class">
+<img src="https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/6ab90c82-8806-470f-9f38-2bd55e407324" width="400" height="390">
 
-#### WelcomeScreen Class
-##### Initial point of interaction for users, facilitating login, signup, and user type differentiation.
-<img src="https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/17f7edcc-aade-44c6-9be2-d7309dce6dd4" height="300" alt="WelcomeScreen Class">
+<br>
+<br>
 
-#### IService Interface
-##### After the Welcome Screen and user authentication, users are seamlessly directed to the Service Layer, where two distinct services cater to their specific needs: AdminService and CustomerService, both located in the services package.
-<img src="https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/97179f35-f922-41eb-bcbe-a9fb704aa35a" height="600" alt="IService Interface">
+- **UsersList Class**
+  
+Manages user accounts using a static map, performs CRUD operations, and enforces unique usernames.
 
-#### AdminService Class
-##### Designed for administrators, offering account, product, order management, and report generation.
+<img src="https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/637f32fb-1f95-4637-82c8-d5637ea95bb7" width="250" height="250">
+<br>
+<br>
 
-#### IEntityManager
-##### The AdminService utilizes the IEntityManager interface to standardize entity management operations. This interface performs CRUD operations and is implemented in the following classes: ManageAccounts, ManageOrders, and ManageProducts.
-![IEntityManager Image](https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/ce9f95ee-e339-4fd3-8869-fded8dd69e67)
+- **WelcomeScreen Class**
+  
+Initial point of interaction for users, facilitating login, signup, and user type differentiation.
+
+<img src="https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/17f7edcc-aade-44c6-9be2-d7309dce6dd4" width="250" height="250">
+<br>
+<br>
+
+- **IService Interface**
+  
+After the Welcome Screen and user authentication, users are seamlessly directed to the Service Layer, where two distinct services cater to their specific needs: AdminService and CustomerService, both located in the services package.
+
+<img src="https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/97179f35-f922-41eb-bcbe-a9fb704aa35a" width="250" height="250">
+<br>
+<br>
+
+- **AdminService Class**
+  
+Designed for administrators, offering account, product, order management, and report generation.
+<br>
+<br>
+
+- **IEntityManager**
+  
+The AdminService utilizes the IEntityManager interface to standardize entity management operations. This interface performs CRUD operations and is implemented in the following classes: ManageAccounts, ManageOrders, and ManageProducts.
+
+<img src="https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/ce9f95ee-e339-4fd3-8869-fded8dd69e67" width="540" height="360">
+<br>
+<br>
 
 ### Product Management
 
