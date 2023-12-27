@@ -23,11 +23,11 @@
 ##### - *Users Accounts:* Captures username, password, and user type (customer/admin).
 <img src="https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/85c2633e-b0db-4087-aa2a-54b3b0fa06cc" height="120" alt="Users Accounts">
 
-##### - *Products:* Includes essential attributes like product ID, name, description, category, price, and quantity in stock and other specific attributes relevant to each category.
+##### - *Products:* Includes essential attributes like product ID, name, description, category, price, quantity in stock and other specific attributes relevant to each category.
 ![Products Image](https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/5d1de79b-e1ee-4075-b77a-00326db7e5ca)
 
 ##### - *Orders:* Details about client information and purchased products.
-<img src="https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/259fb65c-d307-42a4-a2e7-954b240877ca" height="120" alt="Orders">
+<img src="https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/259fb65c-d307-42a4-a2e7-954b240877ca" height="100" alt="Orders">
 
 ##### - *Shopping Carts:* Manages customer carts, including product IDs and quantities.
 <img src="https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/ab25e1e7-d69d-4c43-8781-da7ab74d0796" height="100" alt="Shopping Carts">
@@ -102,9 +102,9 @@
 ##### The updateInventory method within the OrderModel class interacts with the ProductsList class, ensuring that product quantities are appropriately updated after an order is completed. This dynamic relationship guarantees accurate and up-to-date inventory tracking.
 
 ### Key Functions
-###### 1. *Automated Tracking*: Inventory is automatically updated after each purchase, ensuring real-time accuracy in product quantities.
-###### 2. *Preventive Measures*: The ShoppingCart class enforces restrictions on adding products to the cart, ensuring that only products with available quantities can be selected.
-###### 3. *Low Stock Handling*: The system is designed to address scenarios of low or out-of-stock items, enabling measures like updating product availability and providing administrators with insights on products running low within the reports.
+##### 1. *Automated Tracking*: Inventory is automatically updated after each purchase, ensuring real-time accuracy in product quantities.
+##### 2. *Preventive Measures*: The ShoppingCart class enforces restrictions on adding products to the cart, ensuring that only products with available quantities can be selected.
+##### 3. *Low Stock Handling*: The system is designed to address scenarios of low or out-of-stock items, enabling measures like updating product availability and providing administrators with insights on products running low within the reports.
 
 ### Dynamic Product Search and Filtering
 #### Search Functionality
