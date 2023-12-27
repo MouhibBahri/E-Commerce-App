@@ -15,7 +15,7 @@
 #### The class diagram offers a high-level view of the Hike Haven application, illustrating key classes and interfaces. Dive into each feature for an in-depth understanding.
 ![Class Diagram](https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/6099ce0b-5009-4de7-92a5-ae27a0376e07)
 
-#### *Note:* The ISharedFunctions interface is crucial for consistent interaction and output formatting. such us getIntInput, printMenu, and roundPrice.
+#### *Note:* The ISharedFunctions interface is crucial for consistent interaction and output formatting, such as getIntInput, printMenu, and roundPrice.
 
 ## Key Features
 
@@ -23,7 +23,7 @@
 #### For this project, the chosen method for data storage revolves around the utilization of text files. We have adopted text files to store crucial information such as accounts, products, orders, and shopping carts. This decision was made for its simplicity, ease of implementation, and human-readable nature.
 
 ##### Organizing Data in Text Files
-###### - *Users Accounts:* Captures username, password, and user type ( customer / admin ).
+###### - *Users Accounts:* Captures username, password, and user type (customer/admin).
 ![Users Accounts Image](https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/85c2633e-b0db-4087-aa2a-54b3b0fa06cc)
 
 ###### - *Products:* Includes essential attributes like product ID, name, description, category, price, and quantity in stock and other specific attributes relevant to each category.
@@ -40,16 +40,15 @@
 ##### The robust user authentication system involves the UserModel class, UsersList class, and WelcomeScreen class.
 
 ###### UserModel Class
-
-###### Central entity encapsulating user-related information, with subclasses for Admin and Customer
+###### Central entity encapsulating user-related information, with subclasses for Admin and Customer.
 ![UserModel Class Image](https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/6ab90c82-8806-470f-9f38-2bd55e407324)
 
 ###### UsersList Class
-###### Manages user accounts using static map, performs CRUD operations, and enforces unique usernames.
+###### Manages user accounts using a static map, performs CRUD operations, and enforces unique usernames.
 ![UsersList Class Image](https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/637f32fb-1f95-4637-82c8-d5637ea95bb7)
 
 ###### WelcomeScreen Class
-###### Initial point of interaction for users, facilitating login, signup, and user type differentiation. 
+###### Initial point of interaction for users, facilitating login, signup, and user type differentiation.
 ![WelcomeScreen Class Image](https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/17f7edcc-aade-44c6-9be2-d7309dce6dd4)
 
 ###### IService Interface
@@ -60,95 +59,105 @@
 ##### Designed for administrators, offering account, product, order management, and report generation.
 
 ###### IEntityManager
-###### The AdminService utilizes the IEntityManager interface to standardize entity management operations. This interface performs CRUD operations and is implemented in the following classes: ManageAccounts, ManageOrders, and ManageProducts
+###### The AdminService utilizes the IEntityManager interface to standardize entity management operations. This interface performs CRUD operations and is implemented in the following classes: ManageAccounts, ManageOrders, and ManageProducts.
 ![IEntityManager Image](https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/ce9f95ee-e339-4fd3-8869-fded8dd69e67)
 
 ### Product Management
 ##### The Product Management feature encompasses two key classes within the productsData package.
 
 ###### ProductModel Class
-###### The ProductModel class serves as the base entity for product representation. it encapsulates essential attributes common to all products( productId, productPrice, productDescription, productName, quantityInStock, score )
-###### several subclasses extend from ProductModel Class: each catering to a specific product category: AdventureGear, ExplorationTools, HealthAndFitness, TravelEssentials, Others.
+###### The ProductModel class serves as the base entity for product representation. It encapsulates essential attributes common to all products (productId, productPrice, productDescription, productName, quantityInStock, score).
+###### Several subclasses extend from ProductModel Class, each catering to a specific product category: AdventureGear, ExplorationTools, HealthAndFitness, TravelEssentials, Others.
 ###### Each subclass adds its unique attributes and can override general methods, such as toString, to tailor the representation to the specific product category.
 ![ProductModel Class Image](https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/65efeda3-f7d2-4278-9403-8d9fca06bdad)
 
-###### ProductsList Class                                                               ####### Dynamic repository for storing and managing products in a text file, featuring CRUD operations and filtering based on a specific critera.
+##### ProductsList Class
+###### Dynamic repository for storing and managing products in a text file, featuring CRUD operations and filtering based on specific criteria.
 
 ### Management of Shopping Cart:
 ##### The Shopping Cart functionality enables users to efficiently manage their selected products before finalizing a purchase.
 
 ###### ShoppingCart Class
-###### Foundation for cart management, with methods for adding, updating, and removing items...
+###### Foundation for cart management, with methods for adding, updating, and removing items.
 ![ShoppingCart Class Image](https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/6c065f47-48e2-48b2-907a-1dcdcf180fcd)
 
 ### Order Processing
-##### Facilitates the transition from cart to order completion using the OrderModel and OrdersList classes within UsersData package.
+#### Facilitates the transition from cart to order completion using the OrderModel and OrdersList classes within the UsersData package.
 
-###### OrderModel Class                                                                 ####### The OrderModel class encapsulates the details of an order, including the customer, items selected for purchase, a unique order ID (automatically incremented), and the total price of the order.
+##### OrderModel Class
+###### The OrderModel class encapsulates the details of an order, including the customer, items selected for purchase, a unique order ID (automatically incremented), and the total price of the order.
 ![OrderModel Class Image](https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/a990ef4b-bb3f-4e71-b06c-f1eb34a0fcc4)
 
-###### OrdersList Class:                                                                ####### The OrdersList class serves as a centralized hub for order management, featuring a static TreeMap of orders. It facilitates CRUD operations on orders, as well as the ability to save orders to and retrieve orders from a file.
+##### OrdersList Class
+###### The OrdersList class serves as a centralized hub for order management, featuring a static TreeMap of orders. It facilitates CRUD operations on orders, as well as the ability to save orders to and retrieve orders from a file.
 ![OrdersList Class Image](https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/49a6a50c-9cd6-4d8d-9228-ba7d1d76f0cc)
 
 ### Inventory Management
 ##### The Inventory Management feature in the Hike Haven application ensures automated tracking and updates of the product inventory post-purchase.
 
-###### OrderModel Class:                                                                ####### The OrderModel class ensures inventory management during order completion. The completeOrder method within this class is executed only after verifying that each product in the order is available in stock.
+##### OrderModel Class
+###### The OrderModel class ensures inventory management during order completion. The completeOrder method within this class is executed only after verifying that each product in the order is available in stock.
 
-###### ShoppingCart Class:                                                              ####### The ShoppingCart class ensures that products added to the cart have quantities available in stock. This preventive measure guarantees that users can only add products that are currently in stock, reducing the likelihood of issues during the order completion process.
+##### ShoppingCart Class
+###### The ShoppingCart class ensures that products added to the cart have quantities available in stock. This preventive measure guarantees that users can only add products that are currently in stock, reducing the likelihood of issues during the order completion process.
 
-###### ProductsList Class:                                                              ####### The updateInventory method within the OrderModel class interacts with the ProductsList class, ensuring that product quantities are appropriately updated after an order is completed. This dynamic relationship guarantees accurate and up-to-date inventory tracking.
+##### ProductsList Class
+###### The updateInventory method within the OrderModel class interacts with the ProductsList class, ensuring that product quantities are appropriately updated after an order is completed. This dynamic relationship guarantees accurate and up-to-date inventory tracking.
 
-### Key Functions:
-#### 1. Automated Tracking: Inventory is automatically updated after each purchase, ensuring real-time accuracy in product quantities.
-#### 2. Preventive Measures: The ShoppingCart class enforces restrictions on adding products to the cart, ensuring that only products with available quantities can be selected.
-#### 3. Low Stock Handling: The system is designed to address scenarios of low or out-of-stock items, enabling measures like updating product availability and providing administrators with insights on products running low within the reports.
+### Key Functions
+#### 1. *Automated Tracking*: Inventory is automatically updated after each purchase, ensuring real-time accuracy in product quantities.
+#### 2. *Preventive Measures*: The ShoppingCart class enforces restrictions on adding products to the cart, ensuring that only products with available quantities can be selected.
+#### 3. *Low Stock Handling*: The system is designed to address scenarios of low or out-of-stock items, enabling measures like updating product availability and providing administrators with insights on products running low within the reports.
 
-### Dynamic Product Search and Filtering:
-#### Search Functionality:
+### Dynamic Product Search and Filtering
+#### Search Functionality
 ##### * Users can conduct efficient searches by entering case-insensitive keywords related to product names.
-#### Filtering Options:
+#### Filtering Options
 ##### * The ProductsList class features a comprehensive method for filtering products based on multiple criteria, including price range, category, and availability.
 ##### Filtering is entirely optional, allowing users the flexibility to choose specific criteria for refining search results.
 
-###### Public static ArrayList<ProductModel> filterProducts(double maxPrice,double minPrice, String category, String productName,boolean inStock)
+###### Public static ArrayList<ProductModel> filterProducts(double maxPrice, double minPrice, String category, String productName, boolean inStock)
 
-### Payment Processing:
-##### . The Payment Processing feature is seamlessly integrated into the OrderModel class.
-##### . Upon completing an order, users are prompted for basic credit card information.
+### Payment Processing
+##### The Payment Processing feature is seamlessly integrated into the OrderModel class.
+##### Upon completing an order, users are prompted for basic credit card information.
 
 ## Optional Yet Crucial Features
 
 ### Product Recommendations 
 
-#### Functionality Overview:
+#### Functionality Overview
 ##### Hike Haven's Product Recommendation system, powered by the RecommendationSystem class, enhances the user experience by providing personalized suggestions.
 ##### Recommendations are tailored to each user's preferences, leveraging their purchase history and patterns.
-#### Scoring Algorithm:
+#### Scoring Algorithm
 ##### The system employs a sophisticated scoring algorithm:
 ##### A score of 0.02 times the quantity bought is added for each product in the same category as the user's past purchases; which means when a user buys from a certain category, all other products from that category should be more likely to be featured.
 ##### An additional score of 0.01 times the quantity sold contributes to the overall product score; which means top-selling products should be more likely to be featured.
-#### User-Centric Approach:
+#### User-Centric Approach
 ##### This feature creates a dynamic and engaging shopping environment, presenting users with products aligned with their interests and buying patterns.
-#### Implementation Details:
+#### Implementation Details
 ##### The RecommendationSystem class, located in the productsData package, dynamically calculates scores for all products upon user authentication. This approach ensures a personalized and context-aware recommendation system, enhancing the overall user experience.
 ##### It uses a combination of purchase history and global popularity to deliver relevant and enticing suggestions.
 ![Product Recommendations Image](https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/151a2b58-e076-4c1e-b3cc-9ee1c2c0b9ff)
 
 ### Generating Reports
-#### Functionality Overview:
+#### Functionality Overview
 ##### The ManageReports class, part of the services package, automates the generation of comprehensive reports, providing valuable insights for administrators.
 ##### Reports cover diverse aspects, including financial metrics, order analytics, and product availability.
-#### Key Reports:
-##### Average Order Value:                                                              ####### Calculates the average value of orders, offering an overview of customer spending patterns.
-##### Lowest and Highest Order:                                                         ####### Identifies extreme values in the order history, aiding in understanding outliers.
-##### Best-Selling Products:                                                            ####### Ranks products based on the quantity sold, helping administrators identify popular items.
-#### Low Stock Products:                                                                ####### Flags products with stock quantities below a predefined threshold, prompting timely restocking decisions.
-#### User-Friendly Presentation:
+#### Key Reports
+##### Average Order Value
+###### Calculates the average value of orders, offering an overview of customer spending patterns.
+##### Lowest and Highest Order
+###### Identifies extreme values in the order history, aiding in understanding outliers.
+##### Best-Selling Products
+###### Ranks products based on the quantity sold, helping administrators identify popular items.
+#### Low Stock Products
+###### Flags products with stock quantities below a predefined threshold, prompting timely restocking decisions.
+#### User-Friendly Presentation
 ##### The show method in ManageReports ensures reports are presented in a clear and organized manner, facilitating quick comprehension.
-#### Automation for Efficiency:
+#### Automation for Efficiency
 ##### Reports are automatically generated at the administrator's request, saving time and ensuring up-to-date insights into the platform's performance.
-#### Future Enhancements:
+#### Future Enhancements
 ##### The system is designed with extensibility in mind, allowing for the addition of more reporting functionalities in future updates.
 ![Generating Reports Image](https://github.com/MouhibBahri/E-Commerce-App/assets/123774260/15c10191-53e9-4afe-8b03-b430f9041690)
 
