@@ -23,9 +23,3 @@ Items:
 AG001 2
 Total Price: 399.98
 
-Order ID: 5
-Customer: bahbah
-Items: 
-AG001 44
-Total Price: 8799.56
-
